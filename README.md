@@ -41,7 +41,7 @@ It provides quick access to weather, time, tasks, and personal notes — all in 
 
 - 💾 LocalStorage (for persisting todos and notes)
 
-)
+
 
 ## 📦 Installation
 # Clone the repo
