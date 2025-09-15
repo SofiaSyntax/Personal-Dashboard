@@ -27,9 +27,6 @@ It provides quick access to weather, time, tasks, and personal notes — all in 
 
 ---
 
-## 🖼️ Screenshot
-![Dashboard Screenshot](./screenshot.png)
-
 🚀 Tech Stack
 
 - ⚛️ React
