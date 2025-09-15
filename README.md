@@ -1,69 +1,65 @@
-# React + TypeScript + Vite
+# 🏠 Personal Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Lucide](https://img.shields.io/badge/Icons-Lucide-informational?style=for-the-badge&logo=lucide&logoColor=white)
+![OpenWeather](https://img.shields.io/badge/API-OpenWeather-orange?style=for-the-badge)
 
-Currently, two official plugins are available:
+A customizable personal dashboard built with **React**, **TypeScript**, and **TailwindCSS**.  
+It provides quick access to weather, time, tasks, and personal notes — all in one clean interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
+- 🌦 **Weather Widget**: Fetches real-time weather data from [OpenWeather API](https://openweathermap.org/api).
+- ⏰ **Clock**: Displays the current time.
+- ✅ **Todo List**:
+  - Add, mark as done, and delete tasks.
+  - **Stored in LocalStorage** so your tasks persist.
+- 📝 **Notes**:
+  - Add notes with different colors.
+  - Edit, pin, delete, and search through notes.
+  - **Stored in LocalStorage** for persistence.
+- 🎨 **UI/UX**:
+  - Built with TailwindCSS for responsive, modern styling.
+  - Uses [Lucide React](https://lucide.dev/) for beautiful icons.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🖼️ Screenshot
+![Dashboard Screenshot](./screenshot.png)
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+🚀 Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- ⚛️ React
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- 🟦 TypeScript
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- 🎨 TailwindCSS
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- 🖼 Lucide React
+
+- 🌤 OpenWeather API
+
+- 💾 LocalStorage (for persisting todos and notes)
+
+)
+
+## 📦 Installation
+# Clone the repo
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+## ⚙️ Environment Variables
+
+You’ll need an API key from OpenWeather. 
+
+Create a .env file in your project root with:
+VITE_OPENWEATHER_API_KEY=your_api_key_here
